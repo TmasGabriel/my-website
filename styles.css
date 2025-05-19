@@ -1,13 +1,88 @@
 body {
     background-color: #f4f0db;
-    margin: 0px;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
 }
 
 
+.main {
+    margin-top: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.tabs {
+    margin-left: 125px;
+    margin-top: 50px;
+    display: inline;
+    height: 50px;
+}
+
+.tab-button {
+    margin-left: 15px;
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+}
+.tab-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    z-index: 0;
+    transition: left 0.3s ease;
+}
+.tab-button:hover::before {
+    left: 0;
+}
+.tab-button-text {
+    position: relative;
+    z-index: 2;
+    text-decoration: underline;
+}
+.tab-button-text:hover {
+    text-decoration: transparent;
+}
+
 .header {
     position: fixed;
-    display: inline;
-    top: 0;
-    width: 100%;
-    outline: 2px solid black;
+    background-color: #f4f0db;
+    border-bottom: 2px solid black;
+    height: 50px;
+    width: calc(100% - 50px);
+    z-index: 3;
+}
+
+
+.sider {
+    height: 200vh;
+    width: 50px;
+    background-color: black;
+}
+
+.sider-text {
+    font-weight: bolder;
+    letter-spacing: 20px;
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    color: orangered;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    padding: 10px;
+    font-size: 25px;
 }
