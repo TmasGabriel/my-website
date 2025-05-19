@@ -1,0 +1,13 @@
+body {
+    background-color: #f4f0db;
+    margin: 0px;
+}
+
+
+.header {
+    position: fixed;
+    display: inline;
+    top: 0;
+    width: 100%;
+    outline: 2px solid black;
+}
