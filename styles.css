@@ -8,60 +8,30 @@ body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
+    flex-direction: row;
 }
 
-
-.main {
-    margin-top: 50px;
-    flex: 1;
+.pages {
     display: flex;
     flex-direction: column;
+}
+
+#home {
+    padding-top: 50px;
+    height: calc(100vh - 50px);
+}
+
+#home, #about {
+    display: flex;
+    flex-direction: row;
     overflow: auto;
+    width: calc(100vw - 50px);
 }
 
-.tabs {
-    margin-left: 125px;
-    margin-top: 50px;
-    display: inline;
-    height: 50px;
+#about {
+    margin-top: 100px;
+    height: calc(100vh - 150px);
 }
-
-.tab-button {
-    margin-left: 15px;
-    padding-left: 15px;
-    position: relative;
-    overflow: hidden;
-    border: none;
-    background-color: transparent;
-    color: black;
-    font-size: 16px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    font-family: 'Courier New', Courier, monospace;
-}
-.tab-button::before {
-    content: '';
-    position: absolute;
-    top: 22%;
-    left: -100%;
-    width: 100%;
-    height: 55%;
-    background-color: var(--orange);
-    z-index: 0;
-    transition: left 0.3s ease;
-}
-.tab-button:hover::before {
-    left: 0;
-}
-.tab-button-text {
-    position: relative;
-    z-index: 2;
-    text-decoration: underline;
-}
-.tab-button-text:hover {
-    text-decoration: transparent;
-}
-
 
 .bar {
     display: flex;
@@ -70,7 +40,7 @@ body {
 }
 
 .info-box {
-    margin-left: 200px;
+    margin-left: 300px;
     margin-top: 150px;
     width: 700px;
     height: 500px;
@@ -87,7 +57,7 @@ body {
     white-space: nowrap;
     padding: 10px;
     font-size: 100px;
-    -webkit-text-stroke: .5px black;
+    -webkit-text-stroke: .25px black;
     z-index: 0;
 }
 
@@ -99,17 +69,6 @@ body {
     color: var(--orange);
 }
 
-
-.biometric-scanner {
-    margin-top: 50px;
-    width: 200px;
-    height: 600px;
-    margin-left: 100px;
-    outline: 2px solid black;
-    box-shadow: 10px 10px;
-}
-
-
 .header {
     position: fixed;
     background-color: var(--off-white);
@@ -120,7 +79,7 @@ body {
 }
 
 .sider {
-    height: 200vh;
+    height: 150vh;
     width: 50px;
     background-color: black;
 }
@@ -135,4 +94,107 @@ body {
     white-space: nowrap;
     padding: 10px;
     font-size: 25px;
+}
+
+.navbar {
+    position: absolute;
+    margin-left: 125px;
+    margin-top: 50px;
+    height: 50px;
+}
+
+.nav-button {
+    margin-left: 15px;
+    padding-left: 15px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav-button::before {
+    content: '';
+    position: absolute;
+    top: 22%;
+    left: -100%;
+    width: 100%;
+    height: 55%;
+    background-color: var(--orange);
+    z-index: 0;
+    transition: left 0.3s ease;
+}
+.nav-button:hover::before {
+    left: 0;
+}
+.nav-button-text {
+    position: relative;
+    z-index: 2;
+    text-decoration: underline;
+}
+.nav-button-text:hover {
+    text-decoration: transparent;
+}
+
+.navbar.side-navbar {
+    margin-top: 200px;
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+}
+
+.navbar.side-navbar .nav-button {
+    transform: translateY(200px);
+    opacity: 1;
+}
+
+.nav-hider {
+    position: absolute;
+    background-color: var(--off-white);
+    border-bottom: 1px black solid;
+    z-index: 2;
+    width: 85px;
+    height: 200px;
+    margin-left: 75px;
+    margin-top: 375px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.biometric-scanner {
+    margin-top: 50px;
+    width: 200px;
+    height: 600px;
+    margin-left: 900px;
+    outline: 2px solid black;
+    box-shadow: 10px 10px;
+}
+
+.img-box {
+    width: 700px;
+    height: 800px;
+}
+
+.first-img {
+    margin-top: -50px;
+    outline: 2px solid black;
+    box-shadow: 10px 10px;
+    display: block;
+    width: auto;
+    height: 100%;
 }

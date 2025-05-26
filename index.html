@@ -7,24 +7,31 @@
     <title>Thomas Gabriel_</title>
 </head>
 <body>
-    <div class="main">
-        <div class="tabs">
-            <button class="tab-button"><span class="tab-button-text">HOME</span></button>
-            <button class="tab-button"><span class="tab-button-text">ABOUT</span></button>
-            <button class="tab-button"><span class="tab-button-text">PROJECTS</span></button>
-            <button class="tab-button"><span class="tab-button-text">RESUME</span></button>
-            <button class="tab-button"><span class="tab-button-text">CONTACT</span></button>
-        </div>
-        <div class="bar">
-            <div class="info-box">
-                <div class="transparent-text">Thomas</div>
-                <div class="inspo-text">I'm a real programmer with real skills.</div>
+    <div class="pages">
+        <section id="home">
+            <div class="nav-hider"></div>
+            <div class="navbar">
+                <button class="nav-button" data-target="home"><span class="nav-button-text">HOME</span></button>
+                <button class="nav-button" data-target="about"><span class="nav-button-text">ABOUT</span></button>
+                <button class="nav-button" data-target="project"><span class="nav-button-text">PROJECTS</span></button>
+                <button class="nav-button" data-target="resume"><span class="nav-button-text">RESUME</span></button>
+                <button class="nav-button" data-target="contact"><span class="nav-button-text">CONTACT</span></button>
             </div>
+            <div class="home-main">
+                <div class="info-box">
+                    <div class="transparent-text">Thomas</div>
+                    <div class="inspo-text">Apple apple apple apple apple.</div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
             <div class="biometric-scanner">
                 <p>Biometric Scanner</p>
             </div>
-            <img src="oh.jpg" alt="Picture of me" width="500" height="800" style="margin-top: -50px; outline: 2px solid black; box-shadow: 10px 10px;">
-        </div>
+            <div class="img-box">
+                <img src="apple.png" alt="Picture of me" class="first-img">
+            </div>
+        </section>
     </div>
     <div class="header">
         <p style="float:left;margin-left:15px;">Thomas Gabriel_</p>
@@ -33,6 +40,7 @@
     <div class="sider">
         <div class="sider-text">Software Engineer | Full-Stack Developer</div>
     </div>
-    <script src="scripts.js"></script>
+    <script src="nav_move.js"></script>
+    <script src="smooth_scroll.js"></script>
 </body>
 </html>
