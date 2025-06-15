@@ -21,7 +21,7 @@ body {
     height: calc(100vh - 50px);
 }
 
-#home, #about, #resume {
+#home, #about, #resume, #project {
     display: flex;
     flex-direction: row;
     overflow: auto;
@@ -38,6 +38,10 @@ body {
 
 #about {
     margin-top: 100px;
+    height: 100vh;
+}
+
+#project {
     height: 100vh;
 }
 
@@ -276,4 +280,44 @@ body {
     height: 160px;
     margin-left: auto;
     margin-right: 20px;
+}
+
+.home-pic-container {
+    width: 500px;
+}
+
+.home-pic {
+    outline: 2px solid black;
+    box-shadow: 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.project-box {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gif-box {
+    width: 640px;
+    height: 360px;
+    margin: auto;
+    justify-content: space-between;
+    outline: 2px solid black;
+    box-shadow: 10px 10px;
+}
+
+.grav-sim-gif {
+    width: 100%;
 }
