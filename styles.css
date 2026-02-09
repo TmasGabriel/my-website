@@ -17,7 +17,6 @@ body {
 }
 
 #home {
-    padding-top: 50px;
     height: calc(100vh - 50px);
 }
 
@@ -90,11 +89,10 @@ body {
 }
 
 .header {
-    position: fixed;
     background-color: var(--off-white);
     border-bottom: 2px solid black;
     height: 50px;
-    width: calc(100% - 50px);
+    width: 100%;
     z-index: 3;
 }
 
