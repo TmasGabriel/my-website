@@ -16,10 +16,6 @@ body {
     min-width: 0;
 }
 
-#home {
-    height: calc(100vh - 50px);
-}
-
 #home, #about, #resume, #project {
     display: flex;
     flex-direction: row;
@@ -86,14 +82,6 @@ body {
     font-weight: bold;
     z-index: 1;
     color: var(--orange);
-}
-
-.header {
-    background-color: var(--off-white);
-    border-bottom: 2px solid black;
-    height: 50px;
-    width: 100%;
-    z-index: 3;
 }
 
 #sider {
