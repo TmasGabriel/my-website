@@ -117,7 +117,8 @@ body {
 }
 
 .navbar {
-    position: absolute;
+    z-index: 5;
+    position: fixed;
     margin-left: 125px;
     margin-top: 50px;
     height: 50px;
@@ -157,30 +158,6 @@ body {
 }
 .nav-button-text:hover {
     text-decoration: transparent;
-}
-
-.navbar.side-navbar {
-    margin-top: 200px;
-    margin-left: 50px;
-    width: 100px;
-    height: 100px;
-    position: fixed;
-}
-
-.navbar.side-navbar .nav-button {
-    transform: translateY(200px);
-    opacity: 1;
-}
-
-.nav-hider {
-    position: absolute;
-    background-color: var(--off-white);
-    border-bottom: 1px black solid;
-    z-index: 2;
-    width: 85px;
-    height: 200px;
-    margin-left: 75px;
-    margin-top: 375px;
 }
 
 
